@@ -1,0 +1,844 @@
+{
+  "reminders": {
+    "birthday_reminders": [
+      {
+        "contact": "陈姐",
+        "birthday": "10月20日",
+        "birthday_type": "solar",
+        "days_until": 96,
+        "status": "distant",
+        "suggestion": "距离生日还有 96 天，可以设置年度提醒"
+      },
+      {
+        "contact": "张总",
+        "birthday": "12月20日",
+        "birthday_type": "solar",
+        "days_until": 157,
+        "status": "distant",
+        "suggestion": "距离生日还有 157 天，可以设置年度提醒"
+      },
+      {
+        "contact": "老王",
+        "birthday": "3月15日",
+        "birthday_type": "solar",
+        "days_until": 242,
+        "status": "distant",
+        "suggestion": "距离生日还有 242 天，可以设置年度提醒"
+      },
+      {
+        "contact": "大学同学",
+        "birthday": "7月5日",
+        "birthday_type": "solar",
+        "days_until": 354,
+        "status": "distant",
+        "suggestion": "距离生日还有 354 天，可以设置年度提醒"
+      },
+      {
+        "contact": "王阿姨",
+        "birthday_raw": "腊月初八",
+        "birthday_type": "lunar",
+        "days_until": null,
+        "status": "format_unknown",
+        "suggestion": "请手动确认具体日期后设置提醒"
+      }
+    ],
+    "contact_suggestions": [
+      {
+        "contact": "张总",
+        "last_event": "提到了：合作",
+        "last_event_date": "12月20号",
+        "days_since_last_contact": 208,
+        "priority": "high",
+        "suggestion": "已 208 天未联系，建议近期主动问候",
+        "topic_hint": "可以从茶道这个话题切入"
+      },
+      {
+        "contact": "王阿姨",
+        "last_event": "的时候说孙子考上了重点高中",
+        "last_event_date": "5月",
+        "days_since_last_contact": 62,
+        "priority": "medium",
+        "suggestion": "已 62 天，可以找机会聊聊",
+        "topic_hint": "可以从养花这个话题切入"
+      },
+      {
+        "contact": "老王",
+        "last_event": "聊到他在做跨境电商",
+        "last_event_date": "7月",
+        "days_since_last_contact": 1,
+        "priority": "low",
+        "suggestion": "最近有联系（1 天前），保持即可",
+        "topic_hint": "可以从钓鱼这个话题切入"
+      }
+    ],
+    "event_timeline": [
+      {
+        "contact": "王阿姨",
+        "date": "",
+        "description": "提到了：考上"
+      },
+      {
+        "contact": "赵总",
+        "date": "",
+        "description": "提到了：合作"
+      },
+      {
+        "contact": "张总",
+        "date": "12月",
+        "description": "吃饭"
+      },
+      {
+        "contact": "张总",
+        "date": "12月20号",
+        "description": "提到了：合作"
+      },
+      {
+        "contact": "张总",
+        "date": "12月20号",
+        "description": "提到了：项目"
+      },
+      {
+        "contact": "王阿姨",
+        "date": "5月",
+        "description": "的时候说孙子考上了重点高中"
+      },
+      {
+        "contact": "老王",
+        "date": "7月",
+        "description": "聊到他在做跨境电商"
+      }
+    ],
+    "topic_suggestions": [
+      {
+        "contact": "老王",
+        "topics": [
+          {
+            "type": "hobby",
+            "content": "聊聊钓鱼相关的话题"
+          },
+          {
+            "type": "hobby",
+            "content": "聊聊打乒乓球相关的话题"
+          },
+          {
+            "type": "follow_up",
+            "content": "跟进上次聊到的：聊到他在做跨境电商"
+          }
+        ]
+      },
+      {
+        "contact": "张总",
+        "topics": [
+          {
+            "type": "hobby",
+            "content": "聊聊茶道相关的话题"
+          },
+          {
+            "type": "hobby",
+            "content": "聊聊喝普洱相关的话题"
+          },
+          {
+            "type": "follow_up",
+            "content": "跟进上次聊到的：吃饭"
+          }
+        ]
+      },
+      {
+        "contact": "大学同学",
+        "topics": [
+          {
+            "type": "hobby",
+            "content": "聊聊打篮球相关的话题"
+          }
+        ]
+      },
+      {
+        "contact": "王阿姨",
+        "topics": [
+          {
+            "type": "hobby",
+            "content": "聊聊养花相关的话题"
+          },
+          {
+            "type": "follow_up",
+            "content": "跟进上次聊到的：的时候说孙子考上了重点高中"
+          }
+        ]
+      },
+      {
+        "contact": "陈姐",
+        "topics": [
+          {
+            "type": "hobby",
+            "content": "聊聊跑步相关的话题"
+          },
+          {
+            "type": "hobby",
+            "content": "聊聊健身相关的话题"
+          }
+        ]
+      },
+      {
+        "contact": "赵总",
+        "topics": [
+          {
+            "type": "follow_up",
+            "content": "跟进上次聊到的：提到了：合作"
+          }
+        ]
+      }
+    ]
+  },
+  "relationship_analysis": {
+    "scored_contacts": [
+      {
+        "name": "未知联系人",
+        "aliases": [],
+        "birthday": null,
+        "hobbies": [],
+        "key_events": [],
+        "tags": [],
+        "notes": "# 示例聊天备注 — 用于测试提取效果\n# 将下面这段文本输入技能，看看 AI 能提取出什么",
+        "confidence": 0.3,
+        "source": "local",
+        "relationship_score": {
+          "total": 25,
+          "info_completeness": 0,
+          "intimacy": 10,
+          "contact_quality": 10,
+          "potential_value": 5,
+          "level": "low",
+          "highlights": [],
+          "weaknesses": [
+            "信息严重不足，建议花时间了解"
+          ]
+        }
+      },
+      {
+        "name": "老王",
+        "aliases": [],
+        "birthday": {
+          "month": 3,
+          "day": 15,
+          "type": "solar",
+          "raw": "3月15号"
+        },
+        "hobbies": [
+          "钓鱼",
+          "打乒乓球"
+        ],
+        "key_events": [
+          {
+            "date": "7月",
+            "description": "聊到他在做跨境电商"
+          }
+        ],
+        "tags": [
+          "已婚",
+          "有孩子"
+        ],
+        "notes": "老王，3月15号生日，属兔，喜欢钓鱼和打乒乓球。\n上次7月初聊到他在做跨境电商，主要做东南亚市场。\n他老婆叫小李，孩子刚上小学。",
+        "confidence": 0.76,
+        "source": "local",
+        "relationship_score": {
+          "total": 61,
+          "info_completeness": 20,
+          "intimacy": 16,
+          "contact_quality": 20,
+          "potential_value": 5,
+          "level": "medium",
+          "highlights": [
+            "信息完整，容易维护",
+            "近期联系活跃"
+          ],
+          "weaknesses": []
+        }
+      },
+      {
+        "name": "张总",
+        "aliases": [],
+        "birthday": {
+          "month": 12,
+          "day": 20,
+          "type": "solar",
+          "raw": "12月20号"
+        },
+        "hobbies": [
+          "茶道",
+          "喝普洱"
+        ],
+        "key_events": [
+          {
+            "date": "12月20号",
+            "description": "提到了：合作"
+          },
+          {
+            "date": "12月20号",
+            "description": "提到了：项目"
+          },
+          {
+            "date": "12月",
+            "description": "吃饭"
+          }
+        ],
+        "tags": [
+          "设计师"
+        ],
+        "notes": "张总，公司是做工业设计的，上次12月20号吃饭，\n提到明年3月有个大项目要合作。\n他喜欢喝普洱，对茶道很有研究。生日好像是8月还是9月。",
+        "confidence": 0.83,
+        "source": "local",
+        "relationship_score": {
+          "total": 63,
+          "info_completeness": 21,
+          "intimacy": 10,
+          "contact_quality": 19,
+          "potential_value": 13,
+          "level": "medium",
+          "highlights": [
+            "信息完整，容易维护",
+            "近期联系活跃"
+          ],
+          "weaknesses": []
+        }
+      },
+      {
+        "name": "大学同学",
+        "aliases": [
+          "叫"
+        ],
+        "birthday": {
+          "month": 7,
+          "day": 5,
+          "type": "solar",
+          "raw": "7月5号"
+        },
+        "hobbies": [
+          "打篮球"
+        ],
+        "key_events": [],
+        "tags": [
+          "程序员",
+          "学生",
+          "单身"
+        ],
+        "notes": "李明，大学同学，程序员，单身。\n7月5号刚换了工作去字节跳动。\n平时喜欢打篮球和看科幻电影。\n英文名叫 Mike。",
+        "confidence": 0.74,
+        "source": "local",
+        "relationship_score": {
+          "total": 54,
+          "info_completeness": 17,
+          "intimacy": 18,
+          "contact_quality": 10,
+          "potential_value": 9,
+          "level": "medium",
+          "highlights": [
+            "关系密切"
+          ],
+          "weaknesses": []
+        }
+      },
+      {
+        "name": "王阿姨",
+        "aliases": [],
+        "birthday": {
+          "month": null,
+          "day": null,
+          "type": "lunar",
+          "raw": "腊月初八"
+        },
+        "hobbies": [
+          "养花"
+        ],
+        "key_events": [
+          {
+            "date": null,
+            "description": "提到了：考上"
+          },
+          {
+            "date": "5月",
+            "description": "的时候说孙子考上了重点高中"
+          }
+        ],
+        "tags": [
+          "教师"
+        ],
+        "notes": "王阿姨，妈妈的同事，退休教师。\n过年的时候说过她腊月初八生日，喜欢跳广场舞和养花。\n上次5月的时候说孙子考上了重点高中。",
+        "confidence": 0.73,
+        "source": "local",
+        "relationship_score": {
+          "total": 58,
+          "info_completeness": 18,
+          "intimacy": 15,
+          "contact_quality": 20,
+          "potential_value": 5,
+          "level": "medium",
+          "highlights": [
+            "信息完整，容易维护",
+            "近期联系活跃"
+          ],
+          "weaknesses": []
+        }
+      },
+      {
+        "name": "陈姐",
+        "aliases": [],
+        "birthday": {
+          "month": 10,
+          "day": 20,
+          "type": "solar",
+          "raw": "10月20号"
+        },
+        "hobbies": [
+          "跑步",
+          "健身"
+        ],
+        "key_events": [],
+        "tags": [],
+        "notes": "陈姐，健身教练，之前在健身房认识的。\n每周二四六带团课，特别专业。\n她说她生日是10月20号，喜欢跑步和做健康餐。",
+        "confidence": 0.65,
+        "source": "local",
+        "relationship_score": {
+          "total": 39,
+          "info_completeness": 14,
+          "intimacy": 10,
+          "contact_quality": 10,
+          "potential_value": 5,
+          "level": "low",
+          "highlights": [],
+          "weaknesses": []
+        }
+      },
+      {
+        "name": "赵总",
+        "aliases": [],
+        "birthday": null,
+        "hobbies": [],
+        "key_events": [
+          {
+            "date": null,
+            "description": "提到了：合作"
+          }
+        ],
+        "tags": [],
+        "notes": "赵总，上次在行业峰会认识的，做AI芯片的，\n加了微信但一直没联系。名片上写着他是某公司CTO。\n想约他聊合作但不知道从什么话题切入。",
+        "confidence": 0.35,
+        "source": "local",
+        "relationship_score": {
+          "total": 33,
+          "info_completeness": 2,
+          "intimacy": 10,
+          "contact_quality": 8,
+          "potential_value": 13,
+          "level": "low",
+          "highlights": [],
+          "weaknesses": [
+            "信息严重不足，建议花时间了解"
+          ]
+        }
+      }
+    ],
+    "value_ranking": [
+      {
+        "name": "张总",
+        "aliases": [],
+        "birthday": {
+          "month": 12,
+          "day": 20,
+          "type": "solar",
+          "raw": "12月20号"
+        },
+        "hobbies": [
+          "茶道",
+          "喝普洱"
+        ],
+        "key_events": [
+          {
+            "date": "12月20号",
+            "description": "提到了：合作"
+          },
+          {
+            "date": "12月20号",
+            "description": "提到了：项目"
+          },
+          {
+            "date": "12月",
+            "description": "吃饭"
+          }
+        ],
+        "tags": [
+          "设计师"
+        ],
+        "notes": "张总，公司是做工业设计的，上次12月20号吃饭，\n提到明年3月有个大项目要合作。\n他喜欢喝普洱，对茶道很有研究。生日好像是8月还是9月。",
+        "confidence": 0.83,
+        "source": "local",
+        "relationship_score": {
+          "total": 63,
+          "info_completeness": 21,
+          "intimacy": 10,
+          "contact_quality": 19,
+          "potential_value": 13,
+          "level": "medium",
+          "highlights": [
+            "信息完整，容易维护",
+            "近期联系活跃"
+          ],
+          "weaknesses": []
+        }
+      },
+      {
+        "name": "老王",
+        "aliases": [],
+        "birthday": {
+          "month": 3,
+          "day": 15,
+          "type": "solar",
+          "raw": "3月15号"
+        },
+        "hobbies": [
+          "钓鱼",
+          "打乒乓球"
+        ],
+        "key_events": [
+          {
+            "date": "7月",
+            "description": "聊到他在做跨境电商"
+          }
+        ],
+        "tags": [
+          "已婚",
+          "有孩子"
+        ],
+        "notes": "老王，3月15号生日，属兔，喜欢钓鱼和打乒乓球。\n上次7月初聊到他在做跨境电商，主要做东南亚市场。\n他老婆叫小李，孩子刚上小学。",
+        "confidence": 0.76,
+        "source": "local",
+        "relationship_score": {
+          "total": 61,
+          "info_completeness": 20,
+          "intimacy": 16,
+          "contact_quality": 20,
+          "potential_value": 5,
+          "level": "medium",
+          "highlights": [
+            "信息完整，容易维护",
+            "近期联系活跃"
+          ],
+          "weaknesses": []
+        }
+      },
+      {
+        "name": "王阿姨",
+        "aliases": [],
+        "birthday": {
+          "month": null,
+          "day": null,
+          "type": "lunar",
+          "raw": "腊月初八"
+        },
+        "hobbies": [
+          "养花"
+        ],
+        "key_events": [
+          {
+            "date": null,
+            "description": "提到了：考上"
+          },
+          {
+            "date": "5月",
+            "description": "的时候说孙子考上了重点高中"
+          }
+        ],
+        "tags": [
+          "教师"
+        ],
+        "notes": "王阿姨，妈妈的同事，退休教师。\n过年的时候说过她腊月初八生日，喜欢跳广场舞和养花。\n上次5月的时候说孙子考上了重点高中。",
+        "confidence": 0.73,
+        "source": "local",
+        "relationship_score": {
+          "total": 58,
+          "info_completeness": 18,
+          "intimacy": 15,
+          "contact_quality": 20,
+          "potential_value": 5,
+          "level": "medium",
+          "highlights": [
+            "信息完整，容易维护",
+            "近期联系活跃"
+          ],
+          "weaknesses": []
+        }
+      },
+      {
+        "name": "大学同学",
+        "aliases": [
+          "叫"
+        ],
+        "birthday": {
+          "month": 7,
+          "day": 5,
+          "type": "solar",
+          "raw": "7月5号"
+        },
+        "hobbies": [
+          "打篮球"
+        ],
+        "key_events": [],
+        "tags": [
+          "程序员",
+          "学生",
+          "单身"
+        ],
+        "notes": "李明，大学同学，程序员，单身。\n7月5号刚换了工作去字节跳动。\n平时喜欢打篮球和看科幻电影。\n英文名叫 Mike。",
+        "confidence": 0.74,
+        "source": "local",
+        "relationship_score": {
+          "total": 54,
+          "info_completeness": 17,
+          "intimacy": 18,
+          "contact_quality": 10,
+          "potential_value": 9,
+          "level": "medium",
+          "highlights": [
+            "关系密切"
+          ],
+          "weaknesses": []
+        }
+      },
+      {
+        "name": "陈姐",
+        "aliases": [],
+        "birthday": {
+          "month": 10,
+          "day": 20,
+          "type": "solar",
+          "raw": "10月20号"
+        },
+        "hobbies": [
+          "跑步",
+          "健身"
+        ],
+        "key_events": [],
+        "tags": [],
+        "notes": "陈姐，健身教练，之前在健身房认识的。\n每周二四六带团课，特别专业。\n她说她生日是10月20号，喜欢跑步和做健康餐。",
+        "confidence": 0.65,
+        "source": "local",
+        "relationship_score": {
+          "total": 39,
+          "info_completeness": 14,
+          "intimacy": 10,
+          "contact_quality": 10,
+          "potential_value": 5,
+          "level": "low",
+          "highlights": [],
+          "weaknesses": []
+        }
+      },
+      {
+        "name": "赵总",
+        "aliases": [],
+        "birthday": null,
+        "hobbies": [],
+        "key_events": [
+          {
+            "date": null,
+            "description": "提到了：合作"
+          }
+        ],
+        "tags": [],
+        "notes": "赵总，上次在行业峰会认识的，做AI芯片的，\n加了微信但一直没联系。名片上写着他是某公司CTO。\n想约他聊合作但不知道从什么话题切入。",
+        "confidence": 0.35,
+        "source": "local",
+        "relationship_score": {
+          "total": 33,
+          "info_completeness": 2,
+          "intimacy": 10,
+          "contact_quality": 8,
+          "potential_value": 13,
+          "level": "low",
+          "highlights": [],
+          "weaknesses": [
+            "信息严重不足，建议花时间了解"
+          ]
+        }
+      },
+      {
+        "name": "未知联系人",
+        "aliases": [],
+        "birthday": null,
+        "hobbies": [],
+        "key_events": [],
+        "tags": [],
+        "notes": "# 示例聊天备注 — 用于测试提取效果\n# 将下面这段文本输入技能，看看 AI 能提取出什么",
+        "confidence": 0.3,
+        "source": "local",
+        "relationship_score": {
+          "total": 25,
+          "info_completeness": 0,
+          "intimacy": 10,
+          "contact_quality": 10,
+          "potential_value": 5,
+          "level": "low",
+          "highlights": [],
+          "weaknesses": [
+            "信息严重不足，建议花时间了解"
+          ]
+        }
+      }
+    ],
+    "dormant_alerts": [
+      {
+        "name": "未知联系人",
+        "status": "zombie",
+        "status_label": "僵尸人脉（从未激活）",
+        "days_since_contact": null,
+        "value_level": "low",
+        "reasons": [
+          {
+            "reason": "纯陌生人 — 加了微信/名片但从未建立联系",
+            "confidence": 0.9,
+            "evidence": "无聊天记录、信息几乎空白"
+          },
+          {
+            "reason": "信息黑洞 — 对TA了解太少，不知从何聊起",
+            "confidence": 0.8,
+            "evidence": "生日/爱好/近期事件均缺失或极少"
+          }
+        ],
+        "action_plan": {
+          "urgency": "low",
+          "recommended_action": "可选择性激活或放手",
+          "icebreaker": "「未知联系人你好，之前在[场合]加的好友，最近怎么样？」",
+          "timing": "近期任意时间",
+          "fallback": "如无回应，可以放手"
+        },
+        "should_let_go": false
+      },
+      {
+        "name": "大学同学",
+        "status": "zombie",
+        "status_label": "僵尸人脉（从未激活）",
+        "days_since_contact": null,
+        "value_level": "medium",
+        "reasons": [
+          {
+            "reason": "联系节奏放缓 — 可能是双方都忙，缺乏主动联系契机",
+            "confidence": 0.5,
+            "evidence": "距上次联系约未知个月"
+          }
+        ],
+        "action_plan": {
+          "urgency": "medium",
+          "recommended_action": "可选择性激活或放手",
+          "icebreaker": "「大学同学你好，之前在[场合]加的好友，最近怎么样？」",
+          "timing": "近期任意时间",
+          "fallback": "如无回应，可以放手"
+        },
+        "should_let_go": false
+      },
+      {
+        "name": "陈姐",
+        "status": "zombie",
+        "status_label": "僵尸人脉（从未激活）",
+        "days_since_contact": null,
+        "value_level": "low",
+        "reasons": [
+          {
+            "reason": "场景消失 — 过往的共同场景已结束",
+            "confidence": 0.7,
+            "evidence": "陈姐，健身教练，之前在健身房认识的。\n每周二四六带团课，特别专业。\n她说她生日是10月20号，喜欢跑步和做健康餐。"
+          }
+        ],
+        "action_plan": {
+          "urgency": "low",
+          "recommended_action": "可选择性激活或放手",
+          "icebreaker": "「陈姐你好，之前在[场合]加的好友，最近怎么样？」",
+          "timing": "近期任意时间",
+          "fallback": "如无回应，可以放手"
+        },
+        "should_let_go": false
+      },
+      {
+        "name": "赵总",
+        "status": "zombie",
+        "status_label": "僵尸人脉（从未激活）",
+        "days_since_contact": null,
+        "value_level": "low",
+        "reasons": [
+          {
+            "reason": "纯陌生人 — 加了微信/名片但从未建立联系",
+            "confidence": 0.9,
+            "evidence": "无聊天记录、信息几乎空白"
+          },
+          {
+            "reason": "信息黑洞 — 对TA了解太少，不知从何聊起",
+            "confidence": 0.8,
+            "evidence": "生日/爱好/近期事件均缺失或极少"
+          }
+        ],
+        "action_plan": {
+          "urgency": "low",
+          "recommended_action": "可选择性激活或放手",
+          "icebreaker": "「赵总你好，之前在[场合]加的好友，最近怎么样？」",
+          "timing": "近期任意时间",
+          "fallback": "如无回应，可以放手"
+        },
+        "should_let_go": false
+      },
+      {
+        "name": "张总",
+        "status": "cold",
+        "status_label": "已冻结",
+        "days_since_contact": 208,
+        "value_level": "medium",
+        "reasons": [
+          {
+            "reason": "联系节奏放缓 — 可能是双方都忙，缺乏主动联系契机",
+            "confidence": 0.5,
+            "evidence": "距上次联系约6个月"
+          }
+        ],
+        "action_plan": {
+          "urgency": "medium",
+          "recommended_action": "已数月未联系，适合用节日或共同话题重启",
+          "icebreaker": "「张总，最近看到一个茶道的活动/新闻，突然想到你，最近怎么样？」",
+          "timing": "近期节假日或周末",
+          "fallback": "如无回应，三个月后再尝试一次"
+        },
+        "should_let_go": false
+      },
+      {
+        "name": "王阿姨",
+        "status": "cooling",
+        "status_label": "开始变冷",
+        "days_since_contact": 62,
+        "value_level": "medium",
+        "reasons": [
+          {
+            "reason": "联系节奏放缓 — 可能是双方都忙，缺乏主动联系契机",
+            "confidence": 0.5,
+            "evidence": "距上次联系约2个月"
+          }
+        ],
+        "action_plan": {
+          "urgency": "low",
+          "recommended_action": "关系开始降温，趁还有温度尽早联系一次",
+          "icebreaker": "「王阿姨最近怎么样？好久没聊了～」",
+          "timing": "本周或下周",
+          "fallback": "如无回应，三个月后再尝试一次"
+        },
+        "should_let_go": false
+      }
+    ],
+    "summary": {
+      "total_contacts": 7,
+      "high_value": 0,
+      "medium_value": 4,
+      "low_value": 3,
+      "dormant_count": 6,
+      "zombie_count": 4,
+      "need_action_count": 4
+    }
+  },
+  "generated_at": "2026-07-16T08:56:16.733880",
+  "total_contacts": 7,
+  "contacts_with_birthday": 5
+}

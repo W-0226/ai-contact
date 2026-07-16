@@ -1,0 +1,188 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AI人脉关系管家 — 输出格式规范",
+  "description": "定义本技能所有输出文件的 JSON Schema，供下游程序消费。",
+  "version": "1.0.0",
+
+  "definitions": {
+    "Contact": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "联系人名称"
+        },
+        "aliases": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "别名列表"
+        },
+        "birthday": {
+          "type": "object",
+          "properties": {
+            "month": { "type": "integer", "minimum": 1, "maximum": 12 },
+            "day": { "type": "integer", "minimum": 1, "maximum": 31 },
+            "type": {
+              "type": "string",
+              "enum": ["solar", "lunar", "unknown"]
+            },
+            "raw": { "type": "string" }
+          },
+          "description": "生日信息。农历日期 month/day 可能为 null"
+        },
+        "hobbies": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "爱好列表"
+        },
+        "key_events": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "date": { "type": "string" },
+              "description": { "type": "string" }
+            }
+          },
+          "description": "关键事件列表"
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "标签列表"
+        },
+        "relationship": {
+          "type": "string",
+          "description": "与用户的关系（如 大学同学、前同事）"
+        },
+        "notes": {
+          "type": "string",
+          "description": "其他备注信息"
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "提取置信度，0=完全不确定，1=完全确定"
+        },
+        "source": {
+          "type": "string",
+          "enum": ["local", "llm", "hybrid"],
+          "description": "数据来源标注"
+        }
+      }
+    },
+
+    "BirthdayReminder": {
+      "type": "object",
+      "properties": {
+        "contact": { "type": "string" },
+        "birthday": { "type": "string" },
+        "birthday_type": { "type": "string", "enum": ["solar", "lunar", "unknown"] },
+        "birthday_raw": { "type": "string" },
+        "days_until": { "type": ["integer", "null"] },
+        "status": { "type": "string", "enum": ["urgent", "upcoming", "notable", "distant", "format_unknown"] },
+        "suggestion": { "type": "string" }
+      }
+    },
+
+    "ContactSuggestion": {
+      "type": "object",
+      "properties": {
+        "contact": { "type": "string" },
+        "last_event": { "type": "string" },
+        "last_event_date": { "type": "string" },
+        "days_since_last_contact": { "type": "integer" },
+        "priority": { "type": "string", "enum": ["high", "medium", "low"] },
+        "suggestion": { "type": "string" },
+        "topic_hint": { "type": "string" }
+      }
+    }
+  },
+
+  "outputs": {
+    "contacts.json": {
+      "description": "结构化联系人提取结果",
+      "schema": {
+        "type": "object",
+        "required": ["contacts"],
+        "properties": {
+          "contacts": {
+            "type": "array",
+            "items": { "$ref": "#/definitions/Contact" }
+          },
+          "extraction_method": { "type": "string" },
+          "generated_at": { "type": "string", "format": "date-time" },
+          "total_contacts": { "type": "integer" },
+          "local_high_confidence": { "type": "integer" },
+          "llm_enhanced": { "type": "integer" }
+        }
+      }
+    },
+
+    "reminders.json": {
+      "description": "提醒数据（机器可读）",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "reminders": {
+            "type": "object",
+            "properties": {
+              "birthday_reminders": {
+                "type": "array",
+                "items": { "$ref": "#/definitions/BirthdayReminder" }
+              },
+              "contact_suggestions": {
+                "type": "array",
+                "items": { "$ref": "#/definitions/ContactSuggestion" }
+              },
+              "event_timeline": { "type": "array" },
+              "topic_suggestions": { "type": "array" }
+            }
+          },
+          "generated_at": { "type": "string", "format": "date-time" },
+          "total_contacts": { "type": "integer" },
+          "contacts_with_birthday": { "type": "integer" }
+        }
+      }
+    },
+
+    "reminders.md": {
+      "description": "人类可读的联系提醒报告（Markdown 格式）",
+      "format": "markdown",
+      "sections": [
+        "📇 标题与概览统计",
+        "🎂 近期生日提醒（urgent/upcoming/notable 分表）",
+        "📞 联系建议（按优先级排序）",
+        "📅 关键事件时间线",
+        "💬 沟通话题建议",
+        "📋 联系人概览（每人一个子章节）"
+      ]
+    },
+
+    "extraction_log.json": {
+      "description": "提取过程日志",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "input_length": { "type": "integer" },
+          "mode": { "type": "string" },
+          "extraction_method": { "type": "string" },
+          "total_contacts": { "type": "integer" },
+          "per_contact_confidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": { "type": "string" },
+                "confidence": { "type": "number" },
+                "source": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "input_file": "data/sample_notes.txt",
+  "input_type": "text_file",
+  "input_length": 431,
+  "mode": "local",
+  "extraction_method": "local",
+  "total_contacts": 7,
+  "per_contact_confidence": [
+    {
+      "name": "未知联系人",
+      "confidence": 0.3,
+      "source": "local"
+    },
+    {
+      "name": "老王",
+      "confidence": 0.76,
+      "source": "local"
+    },
+    {
+      "name": "张总",
+      "confidence": 0.83,
+      "source": "local"
+    },
+    {
+      "name": "大学同学",
+      "confidence": 0.74,
+      "source": "local"
+    },
+    {
+      "name": "王阿姨",
+      "confidence": 0.73,
+      "source": "local"
+    },
+    {
+      "name": "陈姐",
+      "confidence": 0.65,
+      "source": "local"
+    },
+    {
+      "name": "赵总",
+      "confidence": 0.35,
+      "source": "local"
+    }
+  ]
+}

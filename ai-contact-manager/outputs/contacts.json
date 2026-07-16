@@ -1,0 +1,168 @@
+{
+  "contacts": [
+    {
+      "name": "未知联系人",
+      "aliases": [],
+      "birthday": null,
+      "hobbies": [],
+      "key_events": [],
+      "tags": [],
+      "notes": "# 示例聊天备注 — 用于测试提取效果\n# 将下面这段文本输入技能，看看 AI 能提取出什么",
+      "confidence": 0.3,
+      "source": "local"
+    },
+    {
+      "name": "老王",
+      "aliases": [],
+      "birthday": {
+        "month": 3,
+        "day": 15,
+        "type": "solar",
+        "raw": "3月15号"
+      },
+      "hobbies": [
+        "钓鱼",
+        "打乒乓球"
+      ],
+      "key_events": [
+        {
+          "date": "7月",
+          "description": "聊到他在做跨境电商"
+        }
+      ],
+      "tags": [
+        "已婚",
+        "有孩子"
+      ],
+      "notes": "老王，3月15号生日，属兔，喜欢钓鱼和打乒乓球。\n上次7月初聊到他在做跨境电商，主要做东南亚市场。\n他老婆叫小李，孩子刚上小学。",
+      "confidence": 0.76,
+      "source": "local"
+    },
+    {
+      "name": "张总",
+      "aliases": [],
+      "birthday": {
+        "month": 12,
+        "day": 20,
+        "type": "solar",
+        "raw": "12月20号"
+      },
+      "hobbies": [
+        "茶道",
+        "喝普洱"
+      ],
+      "key_events": [
+        {
+          "date": "12月20号",
+          "description": "提到了：合作"
+        },
+        {
+          "date": "12月20号",
+          "description": "提到了：项目"
+        },
+        {
+          "date": "12月",
+          "description": "吃饭"
+        }
+      ],
+      "tags": [
+        "设计师"
+      ],
+      "notes": "张总，公司是做工业设计的，上次12月20号吃饭，\n提到明年3月有个大项目要合作。\n他喜欢喝普洱，对茶道很有研究。生日好像是8月还是9月。",
+      "confidence": 0.83,
+      "source": "local"
+    },
+    {
+      "name": "大学同学",
+      "aliases": [
+        "叫"
+      ],
+      "birthday": {
+        "month": 7,
+        "day": 5,
+        "type": "solar",
+        "raw": "7月5号"
+      },
+      "hobbies": [
+        "打篮球"
+      ],
+      "key_events": [],
+      "tags": [
+        "程序员",
+        "学生",
+        "单身"
+      ],
+      "notes": "李明，大学同学，程序员，单身。\n7月5号刚换了工作去字节跳动。\n平时喜欢打篮球和看科幻电影。\n英文名叫 Mike。",
+      "confidence": 0.74,
+      "source": "local"
+    },
+    {
+      "name": "王阿姨",
+      "aliases": [],
+      "birthday": {
+        "month": null,
+        "day": null,
+        "type": "lunar",
+        "raw": "腊月初八"
+      },
+      "hobbies": [
+        "养花"
+      ],
+      "key_events": [
+        {
+          "date": null,
+          "description": "提到了：考上"
+        },
+        {
+          "date": "5月",
+          "description": "的时候说孙子考上了重点高中"
+        }
+      ],
+      "tags": [
+        "教师"
+      ],
+      "notes": "王阿姨，妈妈的同事，退休教师。\n过年的时候说过她腊月初八生日，喜欢跳广场舞和养花。\n上次5月的时候说孙子考上了重点高中。",
+      "confidence": 0.73,
+      "source": "local"
+    },
+    {
+      "name": "陈姐",
+      "aliases": [],
+      "birthday": {
+        "month": 10,
+        "day": 20,
+        "type": "solar",
+        "raw": "10月20号"
+      },
+      "hobbies": [
+        "跑步",
+        "健身"
+      ],
+      "key_events": [],
+      "tags": [],
+      "notes": "陈姐，健身教练，之前在健身房认识的。\n每周二四六带团课，特别专业。\n她说她生日是10月20号，喜欢跑步和做健康餐。",
+      "confidence": 0.65,
+      "source": "local"
+    },
+    {
+      "name": "赵总",
+      "aliases": [],
+      "birthday": null,
+      "hobbies": [],
+      "key_events": [
+        {
+          "date": null,
+          "description": "提到了：合作"
+        }
+      ],
+      "tags": [],
+      "notes": "赵总，上次在行业峰会认识的，做AI芯片的，\n加了微信但一直没联系。名片上写着他是某公司CTO。\n想约他聊合作但不知道从什么话题切入。",
+      "confidence": 0.35,
+      "source": "local"
+    }
+  ],
+  "extraction_method": "local",
+  "generated_at": "2026-07-16T08:56:16.724527",
+  "total_contacts": 7,
+  "input_source": "text_file"
+}
